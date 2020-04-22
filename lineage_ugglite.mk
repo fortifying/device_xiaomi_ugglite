@@ -20,29 +20,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
-# Inherit from riva device
+# Inherit from ugglite device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := riva
+PRODUCT_DEVICE := ugglite
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi 5A
-PRODUCT_NAME := aosp_riva
+PRODUCT_MODEL := Redmi Note 5A Lite
+PRODUCT_NAME := lineage_ugglite
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-TARGET_VENDOR_PRODUCT_NAME := riva
+TARGET_VENDOR_PRODUCT_NAME := ugglite
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="riva" \
-    PRODUCT_NAME="riva" \
-    PRIVATE_BUILD_DESC="riva-user 7.1.2 N2G47H V9.5.6.0.NCKMIFA release-keys"
+    TARGET_DEVICE="ugglite" \
+    PRODUCT_NAME="ugglite" \
+    PRIVATE_BUILD_DESC="ugglite-user 7.1.2 N2G47H V11.0.3.0.NDFMIXM release-keys"
 
-BUILD_FINGERPRINT := Xiaomi/riva/riva:7.1.2/N2G47H/V9.5.6.0.NCKMIFA:user/release-keys
+BUILD_FINGERPRINT := "xiaomi/ugglite/ugglite:7.1.2/N2G47H/V11.0.3.0.NDFMIXM:user/release-keys"
