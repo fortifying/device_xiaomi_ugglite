@@ -94,7 +94,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.gps.agps_provider=1
+    ro.gps.agps_provider=1 \
+    ro.ril.def.agps.mode=1
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
