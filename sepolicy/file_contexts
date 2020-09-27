@@ -36,5 +36,6 @@
 /dev/spidev6.1                                  u:object_r:spidev_device:s0
 /dev/spidev7.1                                  u:object_r:spidev_device:s0
 
-# Legacy root dirs
-/firmware(/.*)?            u:object_r:firmware_file:s0
+# Root filesystem
+/firmware(/.*)?                                 u:object_r:firmware_file:s0
+/persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
